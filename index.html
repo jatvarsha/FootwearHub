@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootWear Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" onclick="window.location.href='#'">FootWear Hub</div>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home'); return false;">Home</a></li>
+            <li><a href="#" onclick="showPage('men'); return false;">Men</a></li>
+            <li><a href="#" onclick="showPage('women'); return false;">Women</a></li>
+            <li><a href="#" onclick="showPage('kids'); return false;">Kids</a></li>
+            <li><a href="#featured-sale">Sale</a></li>
+            <li><a href="#" onclick="showPage('brands'); return false;">Brands</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="contact-info">📞 72 899 00000</span>
+            <span>🔍</span>
+            <span>👤</span>
+            <span>❤️</span>
+            <span>🛒</span>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active-page">
+
+        <!-- SALE HERO SLIDER -->
+        <section class="sale-hero-banner">
+            <div class="slider-container">
+                <div class="slide active" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="slide-content">
+                        <div class="sale-hero-badge">SALE</div>
+                        <h2>Up to 50% Off</h2>
+                        <p>Limited time offer on selected styles</p>
+                        <div class="cta-buttons">
+                            <a href="#featured-sale" class="btn btn-primary">Shop Sale</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="slide-content">
+                        <div class="slide-badge">NEW ARRIVALS</div>
+                        <h2>Step Into Style</h2>
+                        <p>Discover the latest footwear trends of 2025</p>
+                        <div class="cta-buttons">
+                            <a href="#featured-sale" class="btn btn-primary">Explore Collection</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="slide-content">
+                        <div class="slide-badge">PREMIUM QUALITY</div>
+                        <h2>Comfort Meets Fashion</h2>
+                        <p>Handcrafted shoes designed for your lifestyle</p>
+                        <div class="cta-buttons">
+                            <a href="#featured-sale" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="slide-content">
+                        <div class="slide-badge">BEST SELLERS</div>
+                        <h2>Most Loved Styles</h2>
+                        <p>Join thousands of happy customers</p>
+                        <div class="cta-buttons">
+                            <a href="#featured-sale" class="btn btn-primary">View Best Sellers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow slider-prev">‹</button>
+            <button class="slider-arrow slider-next">›</button>
+            <div class="slider-dots"></div>
+        </section>
+
+        <!-- HERO GRID -->
+        <section class="hero-grid">
+            <a href="#men" class="hero-column" style="background-image: url('https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&q=80'); background-position: center;">
+                <div class="hero-content">
+                    <h2>TIMELESS TRENDS<br>COLLECTION</h2>
+                    <p>Men</p>
+                </div>
+            </a>
+            <a href="#women" class="hero-column" style="background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80');">
+                <div class="hero-content">
+                    <h2>BRIGHTER MOMENTS<br>COLLECTION</h2>
+                    <p>Women</p>
+                </div>
+            </a>
+            <a href="#kids" class="hero-column" style="background-image: url('https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=800&q=80');">
+                <div class="hero-content">
+                    <h2>MARVEL<br>COLLECTION</h2>
+                    <p>Kids</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- FEATURED COLLECTIONS -->
+        <section class="featured-categories">
+            <div class="featured-container">
+                <div class="featured-card" style="background-image: linear-gradient(135deg, rgba(255,107,53,0.9), rgba(255,159,10,0.9)), url('https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&q=80');">
+                    <div class="featured-content">
+                        <div class="featured-tag">NEW ARRIVAL</div>
+                        <h3>Summer Collection 2025</h3>
+                        <p>Step into style with our latest designs</p>
+                        <a href="#featured-sale" class="featured-btn">Explore Now</a>
+                    </div>
+                </div>
+                <div class="featured-card" style="background-image: linear-gradient(135deg, rgba(99,102,241,0.9), rgba(168,85,247,0.9)), url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&q=80');">
+                    <div class="featured-content">
+                        <div class="featured-tag">TRENDING</div>
+                        <h3>Athletic Performance</h3>
+                        <p>Maximum comfort meets modern design</p>
+                        <a href="#featured-sale" class="featured-btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="featured-card" style="background-image: linear-gradient(135deg, rgba(236,72,153,0.9), rgba(239,68,68,0.9)), url('https://images.unsplash.com/photo-1560343090-f0409e92791a?w=800&q=80');">
+                    <div class="featured-content">
+                        <div class="featured-tag">LIMITED EDITION</div>
+                        <h3>Premium Leather</h3>
+                        <p>Handcrafted elegance for every occasion</p>
+                        <a href="#featured-sale" class="featured-btn">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        main class="main-content">
+        <div class="split-container">
+            <div class="split-section left-section">
+                <img src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=800&q=80" alt="Classic Footwear">
+                <div class="overlay-content">
+                    <div class="sale-badge">ONLINE EXCLUSIVE UPTO 55% OFF</div>
+                    <div class="category-links">
+                        <a href="#featured-sale" class="category-link">MEN</a>
+                        <a href="#featured-sale" class="category-link">WOMEN</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="split-section right-section">
+                <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&q=80" alt="Sports Footwear">
+                <div class="overlay-content">
+                    <div class="sale-badge">UPTO 60% OFF</div>
+                    <div class="category-links">
+                        <a href="#featured-sale" class="category-link">MEN</a>
+                        <a href="#featured-sale" class="category-link">WOMEN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="product-showcase" id="featured-sale">
+            <h2 class="showcase-title">Featured Sale Items</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-55%</div>
+                        <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&q=80" alt="Classic Leather Loafers">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Leather Loafers</h3>
+                        <p class="product-category">Men's Formal</p>
+                        <div class="price-container">
+                            <span class="original-price">₹4,999</span>
+                            <span class="sale-price">₹2,249</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-60%</div>
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600&q=80" alt="Running Sneakers">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Running Sneakers Pro</h3>
+                        <p class="product-category">Men's Sports</p>
+                        <div class="price-container">
+                            <span class="original-price">₹5,499</span>
+                            <span class="sale-price">₹2,199</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-50%</div>
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80" alt="Platform Sandals">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Elegant Platform Sandals</h3>
+                        <p class="product-category">Women's Casual</p>
+                        <div class="price-container">
+                            <span class="original-price">₹3,999</span>
+                            <span class="sale-price">₹1,999</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-45%</div>
+                        <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?w=600&q=80" alt="Block Heels">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Stylish Block Heels</h3>
+                        <p class="product-category">Women's Formal</p>
+                        <div class="price-container">
+                            <span class="original-price">₹4,499</span>
+                            <span class="sale-price">₹2,474</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-55%</div>
+                        <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80" alt="Leather Boots">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Leather Boots</h3>
+                        <p class="product-category">Men's Casual</p>
+                        <div class="price-container">
+                            <span class="original-price">₹6,999</span>
+                            <span class="sale-price">₹3,149</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="discount-tag">-60%</div>
+                        <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=600&q=80" alt="Kids Sports Shoes">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Kids Sports Shoes</h3>
+                        <p class="product-category">Kids' Active</p>
+                        <div class="price-container">
+                            <span class="original-price">₹2,999</span>
+                            <span class="sale-price">₹1,199</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated with Our Latest Offers</h2>
+            <p>Subscribe to our newsletter and never miss a sale!</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-wave">
+                <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+                    <path d="M0,50 C300,100 900,0 1200,50 L1200,100 L0,100 Z" fill="#1a1a2e" opacity="0.5"/>
+                </svg>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-col-promo">
+                        <h2>FOOTWEAR HUB<br>CLUB REWARDS</h2>
+                        <p>Benefits and plenty of surprises are waiting for you! Sign up now and enjoy exclusive deals, early access to sales, and member-only perks.</p>
+                        <a href="#" class="btn-discover">Discover more</a>
+                    </div>
+
+                    <div class="footer-col-links">
+                        <h4>SUPPORT</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Chat with us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Size Guide</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-links">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li><a href="#">Check / Return Order</a></li>
+                            <li><a href="#">Free Shipping</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Loyalty Program</a></li>
+                            <li><a href="#">Franchise Info</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-links">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Release</a></li>
+                            <li><a href="#">Become Partner</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-links">
+                        <h4>LEGALS</h4>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-bar">
+                    <div class="footer-bottom-left">
+                        <span>📍 FIND A STORE</span>
+                        <span>🇮🇳 INDIA | ENGLISH</span>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">📷</a>
+                        <a href="#" title="YouTube">▶️</a>
+                        <a href="#" title="Pinterest">P</a>
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="Twitter">𝕏</a>
+                    </div>
+
+    </div>
+
+    <div class="footer-copyright">
+                    <p>© 2025 FootWear Hub - All Rights Reserved | CIN: L19201WB1931PLC007361</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
