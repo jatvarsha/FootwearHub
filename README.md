@@ -33,7 +33,7 @@ Project Structure
 
 What I Learned
 
-Building multi-page websites
-Creating responsive layouts
-Implementing auto-sliding carousels
-Using CSS animations for better UX
+*.Building multi-page websites
+*.Creating responsive layouts
+*.Implementing auto-sliding carousels
+*.Using CSS animations for better UX
